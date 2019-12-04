@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Catatan"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_alignParentLeft="true"
+                android:textSize="20dp"
+                android:id="@+id/textCatatan"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_toLeftOf="@id/doneButtonCatatan"
+                android:layout_alignTop="@id/textCatatan"
+                android:layout_marginRight="20dp"
+                android:id="@+id/editButtonCatatan"
+                android:clickable="true"
+                android:src="@drawable/edit"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/textCatatan"
+                android:id="@+id/doneButtonCatatan"
+                android:clickable="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/cekmini"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_below="@id/textCatatan"
+                android:layout_marginTop="10dp"
+                android:background="#edeeec"
+                android:id="@+id/lineContentCatatan"/>
+        </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

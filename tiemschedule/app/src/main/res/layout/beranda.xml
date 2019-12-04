@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Catatan"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentLeft="true"
+        android:textSize="30dp"
+        android:id="@+id/titleCatatan"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_gravity="center"
+        android:layout_below="@id/titleCatatan"
+        android:layout_marginTop="10dp"
+        android:background="#edeeec"
+        android:id="@+id/lineCatatan"/>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@id/lineCatatan"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/scrollCatatan">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/textAlert"
+                android:layout_gravity="center"
+                android:text="Belum ada catatan beranda"
+                android:textStyle="italic"
+                android:textSize="16sp"
+                android:visibility="visible"
+                android:typeface="serif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/catatan_beranda_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jadwal"
+        android:layout_below="@id/scrollCatatan"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentLeft="true"
+        android:textSize="30dp"
+        android:id="@+id/titleJadwal"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_gravity="center"
+        android:layout_below="@id/titleJadwal"
+        android:id="@+id/lineJadwal"
+        android:layout_marginTop="10dp"
+        android:background="#edeeec" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lineJadwal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignStart="@+id/titleCatatan">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/textAlertJadwal"
+                android:layout_gravity="center"
+                android:text="Belum ada jadwal hari ini"
+                android:textStyle="italic"
+                android:textSize="16sp"
+                android:visibility="visible"
+                android:typeface="serif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/jadwal_beranda_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical" />
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

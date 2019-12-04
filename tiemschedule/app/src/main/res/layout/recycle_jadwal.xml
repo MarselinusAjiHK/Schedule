@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Japok"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentLeft="true"
+            android:textSize="15dp"
+            android:id="@+id/jadwal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18.00"
+            android:layout_below="@id/jadwal"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentLeft="true"
+            android:textSize="13dp"
+            android:id="@+id/waktu"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kampus 3 UAJY"
+            android:layout_below="@id/jadwal"
+            android:layout_toRightOf="@+id/waktu"
+            android:layout_marginLeft="10dp"
+            android:textSize="13dp"
+            android:id="@+id/tempat"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="16 September 2018"
+            android:layout_below="@id/waktu"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentLeft="true"
+            android:textSize="13dp"
+            android:id="@+id/tanggal"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_toLeftOf="@id/deleteButtonJadwal"
+            android:layout_alignTop="@id/waktu"
+            android:layout_marginRight="20dp"
+            android:id="@+id/editButtonJadwal"
+            android:src="@drawable/edit"/>
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/waktu"
+            android:id="@+id/deleteButtonJadwal"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/cancel"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:layout_below="@id/waktu"
+            android:layout_marginTop="30dp"
+            android:background="#edeeec" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

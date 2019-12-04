@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "68148435471",
+    "firebase_url": "https://tiemschedule.firebaseio.com",
+    "project_id": "tiemschedule",
+    "storage_bucket": "tiemschedule.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:68148435471:android:fce477e762c91f8d",
+        "android_client_info": {
+          "package_name": "g.com.tiemschedule"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "68148435471-agqiocj1rpij0v7bdkikapu7oled13gg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "g.com.tiemschedule",
+            "certificate_hash": "d7fd9da4d328e677007bbc2b5716b6f76cba782c"
+          }
+        },
+        {
+          "client_id": "68148435471-as7if7uu2723ktu48alcqc69i41cvr3m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBR5Dnyl_4GVM6-OBrYD33W4ZL3H5WF6ZE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "68148435471-as7if7uu2723ktu48alcqc69i41cvr3m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

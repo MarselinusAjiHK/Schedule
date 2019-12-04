@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/inputNamaKegiatanLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="140">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Kegiatan"
+                android:textSize="20dp"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/kegiatan"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/inputPukulLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inputNamaKegiatanLayout"
+            android:layout_margin="10dp"
+            app:errorTextAppearance="@style/MyErrorText"
+            app:errorEnabled="true"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mulai Pukul"
+                android:textSize="20dp"
+                android:inputType="time"
+                android:layout_alignParentLeft="true"
+                android:theme="@style/MyEditText"
+                android:id="@+id/Mulai"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/inputTanggalLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inputPukulLayout"
+            android:layout_margin="10dp"
+            app:errorTextAppearance="@style/MyErrorText"
+            app:errorEnabled="true"
+            android:scrollbars="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tanggal"
+                android:textSize="20dp"
+                android:inputType="date"
+                android:layout_alignParentLeft="true"
+                android:theme="@style/MyEditText"
+                android:id="@+id/tanggal"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/inputTempatLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inputTanggalLayout"
+            android:layout_margin="10dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="140"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tempat"
+                android:textSize="20dp"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/tempat"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Switch
+            android:id="@+id/checkberanda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inputTempatLayout"
+            android:layout_margin="10dp"
+            android:text="Prioritas" />
+
+        <Button
+            android:id="@+id/batal"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/inputTempatLayout"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="183dp"
+            android:layout_marginEnd="27dp"
+            android:background="@drawable/shape_cancel"
+            android:gravity="center"
+            android:text="Batal"
+            android:textColor="#ffffff"
+            android:layout_marginTop="50dp"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/simpan"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_toLeftOf="@+id/batal"
+            android:layout_below="@id/inputTempatLayout"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape_default"
+            android:gravity="center"
+            android:text="Simpan"
+            android:layout_marginTop="50dp"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+    </RelativeLayout>
+</ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".pengaturan_tampilan">
+
+    <EditText
+        android:id="@+id/txtTampilanBaru"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="74dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/input_default"
+        android:gravity="left"
+        android:hint="Nama Baru"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp" />
+    <Button
+        android:id="@+id/btnUbahNama"
+        android:layout_width="80dp"
+        android:layout_below="@+id/txtTampilanBaru"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/txtTampilanBaru"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_edit"
+        android:text="Ubah" />
+
+</RelativeLayout>

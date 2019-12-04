@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/inputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="140">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Catatan"
+            android:textSize="20dp"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/inputCatatan"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Switch
+        android:id="@+id/checkberanda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputLayout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Beranda" />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/inputLayout"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:background="@drawable/shape_cancel"
+        android:textColor="#ffffff"
+        android:layout_marginRight="20dp"
+        android:text="Batal"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/batal"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_toLeftOf="@+id/batal"
+        android:layout_below="@id/inputLayout"
+        android:gravity="center"
+        android:background="@drawable/shape_default"
+        android:textColor="#ffffff"
+        android:layout_marginRight="20dp"
+        android:text="Simpan"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/simpan"/>
+</RelativeLayout>

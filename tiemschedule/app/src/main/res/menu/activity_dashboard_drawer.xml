@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_beranda"
+            android:icon="@drawable/ic_beranda"
+            android:title="Beranda" />
+        <item
+            android:id="@+id/nav_jadwal"
+            android:icon="@drawable/ic_jadwal"
+            android:title="Jadwal Saya" />
+        <item
+            android:id="@+id/nav_prioritas"
+            android:icon="@drawable/ic_prioritas"
+            android:title="Prioritas" />
+
+        <item
+            android:id="@+id/nav_kalender"
+            android:icon="@drawable/ic_kalender"
+            android:title="Kalender" />
+        <item
+            android:id="@+id/nav_catatan"
+            android:icon="@drawable/ic_catatan"
+            android:title="Catatan" />
+    </group>
+
+    <item android:title="Akun">
+        <menu>
+            <item
+                android:id="@+id/nav_pengaturan"
+                android:icon="@drawable/ic_pengaturan"
+                android:title="Pengaturan" />
+            <item
+                android:id="@+id/nav_keluar"
+                android:icon="@drawable/ic_keluar"
+                android:title="Keluar" />
+        </menu>
+    </item>
+
+</menu>

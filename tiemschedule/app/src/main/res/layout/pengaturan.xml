@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/profilePicture"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="28dp"
+        app:srcCompat="@drawable/ic_account"
+        android:layout_marginLeft="20dp"/>
+
+
+    <Button
+        android:id="@+id/ubahProfil"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/profilePicture"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/shape_edit"
+        android:text="Ubah" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profilePicture"
+        android:layout_margin="20dp"
+        android:id="@+id/emailCard">
+        <TextView
+            android:id="@+id/textEmail"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="@color/black"
+            android:textSize="22dp" />
+        <TextView
+            android:id="@+id/emailView"
+            android:paddingLeft="10dp"
+            android:paddingBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="TiEM@tiem.com"
+            android:textSize="18dp" />
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailCard"
+        android:layout_margin="20dp"
+        android:id="@+id/namaCard">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textNamaPengguna"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama"
+                android:textColor="@color/black"
+                android:textSize="22dp" />
+            <TextView
+                android:id="@+id/namaPenggunaView"
+                android:paddingLeft="10dp"
+                android:paddingBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Tiem"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/btnTampilan"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="@drawable/shape_edit"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="10dp"
+
+                android:layout_alignBottom="@id/namaPenggunaView"
+                android:text="ubah" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/namaCard"
+        android:layout_margin="20dp"
+        android:id="@+id/passwordCard">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textPassword"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textColor="@color/black"
+                android:textSize="22dp" />
+            <TextView
+                android:id="@+id/passwordView"
+                android:paddingLeft="10dp"
+                android:paddingBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Tersedia"
+                android:textColor="@color/green"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/btnPassword"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="@drawable/shape_edit"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignBottom="@id/passwordView"
+                android:text="ubah" />
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+    <Button
+        android:id="@+id/btnHapus"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/shape_cancel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/passwordCard"
+        android:textColor="@color/white"
+        android:text="Hapus akun" />
+
+</RelativeLayout>
